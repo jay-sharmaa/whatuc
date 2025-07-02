@@ -50,8 +50,8 @@ export default function AboutPage() {
                 />
 
                 <div className="flex flex-col items-center justify-center mx-2 h-8 w-16">
-                    <span className="text-lg text-white mb-1">------</span>
-                    <span className="text-lg text-white mt-1">------</span>
+                    <span className="text-lg text-white mb-1">------&gt;</span>
+                    <span className="text-lg text-white mt-1">&lt;------</span>
                 </div>
 
                 <div className="p-4 border border-white rounded-2xl bg-black relative flex gap-4 h-60 items-center">
@@ -72,8 +72,8 @@ export default function AboutPage() {
                     />
 
                     <div className="flex flex-col items-center justify-center mx-2 h-8 w-16">
-                        <span className="text-lg text-white mb-1">------;</span>
-                        <span className="text-lg text-white mt-1">------</span>
+                        <span className="text-lg text-white mb-1">------&gt;</span>
+                        <span className="text-lg text-white mt-1">&lt;------</span>
                     </div>
 
                     <InfoCard
@@ -83,7 +83,45 @@ export default function AboutPage() {
                         expandable
                     />
                 </div>
-
+            </div>
+            <div className="mt-8 w-full max-w-4xl p-6 border border-white rounded-xl bg-zinc-900">
+                <h2 className="text-2xl font-bold mb-4">📂 GitHub Repositories</h2>
+                <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed">
+                    <li>
+                        Backend container 1 overlapping video:{" "}
+                        <a
+                            href="https://github.com/jay-sharmaa/video_registor"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-400 underline"
+                        >
+                            https://github.com/jay-sharmaa/video_registor
+                        </a>
+                    </li>
+                    <li>
+                        Backend container 2 model predictions and mediapipe:{" "}
+                        <a
+                            href="https://github.com/jay-sharmaa/ml_build"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-400 underline"
+                        >
+                            https://github.com/jay-sharmaa/ml_build
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div className="mt-12 w-full max-w-4xl p-6 border border-white rounded-xl bg-zinc-900">
+                <h2 className="text-2xl font-bold mb-4">🚀 How to Use This Project</h2>
+                <ol className="list-decimal list-inside space-y-2 text-sm leading-relaxed">
+                    <li>Clone this repositories</li>
+                    <li>Run container 1 on port 8000</li>
+                    <li>Run container 2 on port 3000</li>
+                    <li>Goto http:127.0.0.1::3000/upload/docs</li>
+                    <li>File should contain webm. video recorded from your web cam</li>
+                    <li>InputFile should contain mp4 file that the user looks at while recording</li>
+                    <li>Any file name</li>
+                </ol>
             </div>
         </div>
     );

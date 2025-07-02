@@ -1,3 +1,7 @@
 export default function AboutPage() {
-  return <h1>Home Page</h1>;
+  return (
+    <div>
+      Currently the servers are down
+    </div>
+  );
 }
