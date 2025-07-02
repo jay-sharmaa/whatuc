@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { ArrowRight, ArrowLeft } from 'lucide-react';
 
 type CardProps = {
     title: string;
@@ -51,8 +50,8 @@ export default function AboutPage() {
                 />
 
                 <div className="flex flex-col items-center justify-center mx-2 h-8 w-16">
-                    <span className="text-lg text-white mb-1">------></span>
-                    <span className="text-lg text-white mt-1">&lt;------</span>
+                    <span className="text-lg text-white mb-1">------</span>
+                    <span className="text-lg text-white mt-1">------</span>
                 </div>
 
                 <div className="p-4 border border-white rounded-2xl bg-black relative flex gap-4 h-60 items-center">
@@ -73,8 +72,8 @@ export default function AboutPage() {
                     />
 
                     <div className="flex flex-col items-center justify-center mx-2 h-8 w-16">
-                        <span className="text-lg text-white mb-1">------></span>
-                        <span className="text-lg text-white mt-1">&lt;------</span>
+                        <span className="text-lg text-white mb-1">------;</span>
+                        <span className="text-lg text-white mt-1">------</span>
                     </div>
 
                     <InfoCard
