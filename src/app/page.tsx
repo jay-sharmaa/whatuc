@@ -106,7 +106,7 @@ export default function AboutPage() {
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_API_URL;
 
     try {
-      const response = await fetch(`${backendUrl}/upload`, {
+      const response = await fetch(`https://video-registor.onrender.com/upload`, {
         method: "POST",
         body: formData,
       });
