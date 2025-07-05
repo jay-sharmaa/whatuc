@@ -103,7 +103,7 @@ export default function AboutPage() {
     formData.append("inputfile", uploadedFile);
     formData.append("filename", "output.mp4");
 
-    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_API_URL;
+    // const backendUrl = process.env.NEXT_PUBLIC_BACKEND_API_URL;
 
     try {
       const response = await fetch(`https://video-registor.onrender.com/upload`, {
